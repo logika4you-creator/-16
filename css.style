@@ -1,140 +1,133 @@
 /* М2У1: Селектори та текст */
 body {
-    font-family: 'Courier New', Courier, monospace; /* Ігровий шрифт */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #0b0d17; /* Глибокий космос */
+    background: radial-gradient(circle, #1a1a2e, #0f0f1b); /* М2У6: Градієнт космосу */
     color: white;
-    overflow-x: hidden;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+/* HEADER - Космічна зона */
+header {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #ff000033, transparent); /* Ефект тривоги */
+    text-align: center;
+    border-bottom: 2px solid #333;
 }
 
-/* М2У6: Фони та градієнти */
-.hero {
-    background: radial-gradient(circle, #1a1c2c 0%, #000000 100%);
-    padding: 60px 0;
-    border-bottom: 3px solid #ff0000; /* Червона лінія зрадника */
+.main-logo {
+    font-size: 70px;
+    letter-spacing: 10px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 0 20px #ff0000; /* Неонове сяйво */
+    transition: 0.5s;
 }
 
-/* М2У4: Flexbox основи */
-.hero-flex {
+.main-logo:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 40px #ff0000;
+}
+
+.warning-text {
+    color: #ff4d4d;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* LIST - Статистика (Flexbox) */
+.stats-list {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.stat-item {
+    background: #252545;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+
+.stat-item:hover {
+    background: #3a3a6a;
+    transform: translateY(-5px);
+}
+
+/* BUTTON - М2У2: Кнопка екстрених зборів */
+.btn-emergency {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #800000;
+    transition: 0.2s;
+}
+
+.btn-emergency:hover {
+    background-color: #cc0000;
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #800000;
+}
+
+/* MAIN & CARDS - М2У4/У5: Flexbox та Блокова модель */
+main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
     flex-wrap: wrap;
 }
 
-.logo {
-    font-size: 60px;
-    color: #ff0000;
-    text-shadow: 4px 4px 0px #fff;
-    margin-bottom: 10px;
-}
-
-.glitch {
-    color: #00ffff;
-    font-style: italic;
-}
-
-.hero-img {
-    width: 250px;
-    filter: drop-shadow(0 0 15px #00ffff); /* Сяйво навколо персонажа */
-    animation: float 3s ease-in-out infinite; /* Анімація польоту */
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-/* М2У2: Посилання та кнопки */
-.btn-play {
-    display: inline-block;
-    background-color: #ff0000;
-    color: white;
-    padding: 15px 40px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 50px;
-    margin-top: 20px;
-    transition: 0.3s;
-    border: 2px solid white;
-}
-
-.btn-play:hover {
-    background-color: #ffffff;
-    color: #ff0000;
-    transform: scale(1.1);
-}
-
-/* М2У5: Flexbox картки */
-.title {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 32px;
-}
-
-.flex-cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-/* М2У3: Блокова модель */
 .card {
-    flex: 1;
-    min-width: 250px;
-    padding: 25px;
-    border-radius: 15px;
-    text-align: center;
-    transition: 0.4s;
-    border: 2px solid transparent;
-}
-
-.crewmate { background-color: #2e3141; border-color: #00ffff; }
-.impostor { background-color: #2e3141; border-color: #ff0000; }
-.ghost { background-color: #2e3141; border-color: #ffffff; }
-
-.card:hover {
-    transform: scale(1.05);
-    background-color: #3d4259;
-}
-
-/* М2У3: Списки та блоки */
-.tasks-box {
-    background: #1a1c2c;
+    background: #16213e;
+    width: 250px;
     padding: 30px;
     border-radius: 20px;
-    margin: 50px 0;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    border: 2px solid #333;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
 }
 
-.task-list {
-    list-style-type: "🚀 ";
-    line-height: 2;
-    font-size: 18px;
+.role-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
-/* Footer */
-.footer {
-    background-color: #000;
+/* Ховер-ефекти для карток */
+.card:hover {
+    transform: translateY(-15px) rotate(2deg);
+    border-color: #555;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.impostor:hover {
+    background: #4e1a1a; /* Колір для зрадника */
+}
+
+.crewmate:hover {
+    background: #1a3c4e; /* Колір для команди */
+}
+
+/* FOOTER */
+footer {
+    background: #0a0a0a;
+    padding: 30px;
     text-align: center;
-    padding: 40px 0;
-    border-top: 2px dashed #555;
-}
-
-iframe {
-    border: 3px solid #ff0000;
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-.copy {
-    margin-top: 20px;
-    color: #555;
+    font-size: 14px;
+    color: #666;
 }
