@@ -2,65 +2,52 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Among Us | Space Mission</title>
+    <title>Among Us - Space Mission</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- М2У6: Космічний градієнт у шапці -->
-    <header class="hero">
-        <div class="container hero-flex">
-            <div class="hero-text">
-                <h1 class="logo">Among Us</h1>
-                <h2 class="glitch">There is an Impostor among us...</h2>
-                <p>Приєднуйся до команди на космічному кораблі, виконуй завдання та знайди зрадника!</p>
-                <!-- М2У2: Кнопка-посилання -->
-                <a class="btn-play" href="https://www.innersloth.com/games/among-us/" target="_blank">Play Now</a>
+    <header>
+        <div class="hero-content">
+            <h1 class="main-logo">AMONG US</h1>
+            <h2 class="warning-text">There is 1 Impostor among us</h2>
+            
+            <div class="stats-list">
+                <div class="stat-item">Tasks: 100% 🛠️</div>
+                <div class="stat-item">Oxygen: Stable 💨</div>
+                <div class="stat-item">Status: Shhh! 🤫</div>
             </div>
-            <img class="hero-img" src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_Icon.png" alt="Among Us Character">
+
+            <a class="btn-emergency" href="#">EMERGENCY MEETING</a>
         </div>
     </header>
 
-    <main class="container">
-        <!-- М2У5: Секція з картками ролей -->
-        <section class="roles">
-            <h2 class="title">Choose Your Role</h2>
-            <div class="flex-cards">
-                <div class="card crewmate">
-                    <h3>Crewmate</h3>
-                    <p>Виконуй завдання та стеж за іншими, щоб вижити.</p>
-                </div>
-                <div class="card impostor">
-                    <h3>Impostor</h3>
-                    <p>Саботуй роботу корабля та непомітно усувай команду.</p>
-                </div>
-                <div class="card ghost">
-                    <h3>Ghost</h3>
-                    <p>Продовжуй допомагати своїм навіть після вибуття.</p>
-                </div>
-            </div>
-        </section>
+    <main>
+        <h2 class="section-title">Choose Your Side</h2>
 
-        <!-- М2У3: Блокова модель та списки -->
-        <section class="tasks-box">
-            <h2>Common Tasks 📋</h2>
-            <ul class="task-list">
-                <li>Fix Wiring (Лагодження проводки)</li>
-                <li>Download Data (Завантаження даних)</li>
-                <li>Clear Asteroids (Знищення астероїдів)</li>
-                <li>Swipe Card (Провести картку)</li>
-            </ul>
+        <section class="cards-container">
+            <div class="card crewmate">
+                <div class="role-icon">💙</div>
+                <h3>Crewmate</h3>
+                <p>Виконуй завдання, стеж за камерами та знайди зрадника!</p>
+            </div>
+
+            <div class="card impostor">
+                <div class="role-icon">❤️</div>
+                <h3>Impostor</h3>
+                <p>Саботуй роботу корабля та ліквідуй команду непомітно.</p>
+            </div>
+
+            <div class="card ghost">
+                <div class="role-icon">👻</div>
+                <h3>Ghost</h3>
+                <p>Навіть після поразки продовжуй допомагати своїм друзям.</p>
+            </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <h3>Emergency Meeting! 🚨</h3>
-            <!-- М2У8: Вбудоване відео -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nsZlV6G-9Z0" frameborder="0" allowfullscreen></iframe>
-            <p class="copy">Created by Space Cadet ✨</p>
-        </div>
+    <footer>
+        <p>Created by Space Cadet ✨ | 2026</p>
     </footer>
 
 </body>
