@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Among Us</title>
+    <title>Among Us Space</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ШАПКА -->
+    <!-- ШАПКА САЙТУ -->
 
     <header class="header">
 
         <div class="logo">
-            <h1>AMONG US</h1>
+            <h1>Among Us Space</h1>
         </div>
 
-        <nav class="nav">
+        <!-- НАВІГАЦІЯ -->
+
+        <nav class="navigation">
 
             <a href="#about">Про гру</a>
             <a href="#roles">Ролі</a>
             <a href="#gallery">Галерея</a>
-            <a href="#video">Відео</a>
+            <a href="#video">Трейлер</a>
 
         </nav>
 
@@ -36,23 +38,30 @@
 
         <div class="hero-text">
 
-            <h2>Космічна гра про команду та зрадників</h2>
+            <h2>Знайди імпостера у космосі</h2>
 
             <p>
-                Among Us — популярна онлайн-гра,
-                де екіпаж корабля виконує завдання,
-                а імпостер намагається всіх перемогти.
+                Among Us — це популярна командна гра,
+                де екіпаж виконує завдання, а імпостер
+                намагається всіх перехитрити.
             </p>
 
-            <a class="button" href="https://www.innersloth.com/games/among-us/"
+            <a class="btn"
+                href="https://www.innersloth.com/games/among-us/"
                 target="_blank">
-                Офіційний сайт
+
+                Грати зараз
+
             </a>
 
         </div>
 
-        <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg"
-            alt="Among Us">
+        <div class="hero-image">
+
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg"
+                alt="Among Us">
+
+        </div>
 
     </section>
 
@@ -66,11 +75,11 @@
 
             <div class="card">
 
-                <h3>Командна робота</h3>
+                <h3>Командна гра</h3>
 
                 <p>
-                    Гравці разом виконують завдання
-                    на космічному кораблі.
+                    Гравці працюють разом,
+                    щоб виконати всі місії.
                 </p>
 
             </div>
@@ -80,19 +89,19 @@
                 <h3>Імпостер</h3>
 
                 <p>
-                    Один із гравців є зрадником
-                    та заважає екіпажу.
+                    Один із гравців є зрадником,
+                    який заважає екіпажу.
                 </p>
 
             </div>
 
             <div class="card">
 
-                <h3>Обговорення</h3>
+                <h3>Голосування</h3>
 
                 <p>
-                    Після кожного раунду
-                    гравці голосують.
+                    Після обговорення гравці
+                    голосують за підозрюваного.
                 </p>
 
             </div>
@@ -109,7 +118,7 @@
 
         <div class="roles-container">
 
-            <div class="role-box crew">
+            <div class="role crew">
 
                 <h3>Екіпаж</h3>
 
@@ -120,13 +129,13 @@
 
             </div>
 
-            <div class="role-box impostor">
+            <div class="role impostor">
 
                 <h3>Імпостер</h3>
 
                 <p>
-                    Саботує корабель та усуває
-                    членів екіпажу.
+                    Саботує корабель та
+                    усуває членів екіпажу.
                 </p>
 
             </div>
@@ -139,17 +148,17 @@
 
     <section class="gallery" id="gallery">
 
-        <h2>Галерея гри</h2>
+        <h2>Галерея</h2>
 
         <div class="gallery-box">
 
-            <img src="https://play-lh.googleusercontent.com/JqRnT9j6H2z1gS4xA0Jf0z9fYk8T9X5Yw6xR2P5A"
-                alt="Among Us">
-
-            <img src="https://cdn1.epicgames.com/offer/963137e4c29d4c79a81323b8fab03a40/EGS_AmongUs_Innersloth_S1_2560x1440"
+            <img src="https://cdn1.epicgames.com/offer/963137e4c29d4c79a81323b8fab03a40/EGS_AmongUs_Innersloth_S1_2560x1440.jpg"
                 alt="Among Us">
 
             <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg"
+                alt="Among Us">
+
+            <img src="https://i.ytimg.com/vi/nsYdkh9uZwE/maxresdefault.jpg"
                 alt="Among Us">
 
         </div>
@@ -158,16 +167,19 @@
 
     <!-- ВІДЕО -->
 
-    <section class="video-section" id="video">
+    <section class="video" id="video">
 
-        <h2>Трейлер гри</h2>
+        <h2>Офіційний трейлер</h2>
 
-        <iframe width="700" height="400"
-            src="https://www.youtube.com/embed/nsYdkh9uZwE"
-            title="Among Us"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+        <div class="video-box">
+
+            <iframe
+                src="https://www.youtube.com/embed/nsYdkh9uZwE"
+                title="Among Us Trailer"
+                allowfullscreen>
+            </iframe>
+
+        </div>
 
     </section>
 
@@ -175,9 +187,20 @@
 
     <footer class="footer">
 
-        <p>
-            Сайт розроблено Ковальчуком Марком © 2026
-        </p>
+        <div class="footer-box">
+
+            <h3>Among Us Space</h3>
+
+            <p>
+                Навчальний сайт-лендинг,
+                створений з використанням HTML та CSS.
+            </p>
+
+            <p>
+                Сайт розроблено Ковальчуком Марком © 2026
+            </p>
+
+        </div>
 
     </footer>
 
