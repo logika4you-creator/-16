@@ -4,6 +4,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
+    background color: black;
 }
 
 /* ШАПКА */
@@ -22,6 +23,7 @@ header {
     border-bottom: 5px solid #ff2d2d;
 
     box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+    background color: grey;
 }
 
 .header-overlay {
