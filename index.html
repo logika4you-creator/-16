@@ -1,18 +1,195 @@
+```html
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Among Us — гра про самозванців</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111827;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ШАПКА */
+
+        header {
+            background-image:
+            linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+            url("https://wallpaperaccess.com/full/6802705.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            padding: 60px 20px;
+            text-align: center;
+
+            border-bottom: 5px solid #ff2d2d;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+        }
+
+        .header-overlay {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            color: #ff2d2d;
+
+            text-shadow:
+            0 0 10px #ff0000,
+            0 0 20px #ff0000,
+            0 0 30px #ff0000;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            color: #dddddd;
+            margin-bottom: 35px;
+        }
+
+        /* НАВІГАЦІЯ */
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .nav-button {
+            background: linear-gradient(135deg, #ff2d2d, #990000);
+
+            color: white;
+            padding: 14px 24px;
+
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+
+            border-radius: 12px;
+
+            border: 2px solid #ff4d4d;
+
+            transition: 0.3s;
+
+            box-shadow: 0 4px 12px rgba(255,0,0,0.4);
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px) scale(1.05);
+
+            background: linear-gradient(135deg, #ff4d4d, #cc0000);
+
+            box-shadow: 0 6px 20px rgba(255,0,0,0.7);
+        }
+
+        /* MAIN */
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* СЕКЦІЇ */
+
+        .section {
+            background-color: #1f2937;
+
+            margin-bottom: 35px;
+            padding: 25px;
+
+            border-radius: 18px;
+
+            border: 2px solid #374151;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #ff4d4d;
+
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        ul {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        /* КАРТИНКИ */
+
+        img {
+            margin-top: 20px;
+
+            border-radius: 15px;
+
+            max-width: 100%;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background-color: #000;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+
+            margin-top: 40px;
+
+            border-top: 4px solid #ff2d2d;
+
+            font-size: 18px;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
     <header>
         <div class="header-overlay">
+
             <h1>🚀 Among Us</h1>
-            <p class="subtitle">Хто самозванець серед екіпажу?</p>
+
+            <p class="subtitle">
+                Хто самозванець серед екіпажу?
+            </p>
 
             <nav class="menu">
                 <a href="#about" class="nav-button">Про гру</a>
@@ -20,86 +197,60 @@
                 <a href="#impostors" class="nav-button">Самозванці</a>
                 <a href="#roles" class="nav-button">Ролі</a>
             </nav>
+
         </div>
     </header>
 
     <main>
 
         <section id="about" class="section">
+
             <h2>Про Among Us</h2>
 
             <p>
-                Among Us — це популярна космічна гра, де гравці діляться
-                на мирних членів екіпажу та самозванців.
-                Мирні виконують завдання і шукають зрадника,
-                а самозванці саботують корабель і вбивати гравців.
+                Among Us — це популярна космічна гра,
+                де гравці діляться на мирних членів екіпажу
+                та самозванців.
             </p>
 
             <h3>
-                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg"
-                width="700">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg">
             </h3>
+
         </section>
 
         <section id="crewmates" class="section">
+
             <h2>Цікаві факти про мирних</h2>
 
             <ul>
-                <li>🔧 Мирні повинні виконати всі завдання для перемоги.</li>
-                <li>👀 Вони можуть помітити дивну поведінку самозванця.</li>
-                <li>🚨 Кожен може натиснути кнопку екстрених зборів.</li>
-                <li>👻 Після смерті мирні стають привидами і можуть доробляти завдання.</li>
+                <li>🔧 Мирні повинні виконати всі завдання.</li>
+                <li>👀 Вони шукають самозванця.</li>
+                <li>🚨 Можна скликати екстрені збори.</li>
+                <li>👻 Після смерті стають привидами.</li>
             </ul>
 
-            <h3>
-                <img src="https://wallpapers.com/images/featured/among-us-png-q1l8f0m6x9w4z8j8.jpg"
-                width="500">
-            </h3>
         </section>
 
         <section id="impostors" class="section">
-            <h2>Цікаві факти про самозванців</h2>
+
+            <h2>Самозванці</h2>
 
             <ul>
-                <li>🔪 Самозванці можуть вбивати членів екіпажу.</li>
-                <li>🛠 Вони саботують системи корабля.</li>
-                <li>🕳 Можуть пересуватися через вентиляцію.</li>
-                <li>🎭 Їхня головна зброя — брехня та хитрість.</li>
+                <li>🔪 Можуть вбивати гравців.</li>
+                <li>🕳 Лазять через вентиляцію.</li>
+                <li>🛠 Саботують корабель.</li>
+                <li>🎭 Обманюють екіпаж.</li>
             </ul>
 
-            <h3>
-                <img src="https://images6.alphacoders.com/110/1108224.jpg"
-                width="700">
-            </h3>
-        </section>
-
-        <section id="roles" class="section">
-            <h2>Ролі у грі</h2>
-
-            <p>
-                🔧Інженер вміє лазити по вентиляціях.
-                🎓Науковець вміє передивлятися у свій планшет пульс серця.
-                🔊Noisemaker коли його вбивають, то він вмієвидавати сигнал де його вбили.
-                📡Tracker  накладає камеру на гравця щоб його можна було роздивитися на карті.
-                👓Детектив вміє легко звинувачувати самозванців.
-                🛡️Ангел-захисник вміє накладати щит на гравців і коли гравця з щитом вбивають, то щит ламається і ми знаємо хто самозванець.
-                Є ще ролі у самозванців:
-                Shapshifter вміє перетворятися на іншого гравця.
-                Phantom вміє стати невидимим.
-                Viper коли він вбиває когось, то він накладає кислоту на гравця і через деякий час тіло зникає.
-            </p>
-
-            <h3>
-                <img src="https://static.wikia.nocookie.net/among-us-wiki/images/7/70/Roles.png"
-                width="700">
-            </h3>
         </section>
 
     </main>
 
     <footer>
-        <p>🚀 Сайт про Among Us | 2025</p>
+        <p>🚀 Сайт створено Ковальчуком Марком | 2026</p>
     </footer>
 
 </body>
 </html>
+```
