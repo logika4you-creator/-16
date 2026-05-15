@@ -1,237 +1,182 @@
-```html
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us</title>
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>
-        Among Us - Space Mission
-    </title>
-
-    <link rel="stylesheet"
-        href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ШАПКА -->
 
-    <header>
+    <header class="header">
 
-        <div class="top-bar">
-
-            <h2 class="logo">
-                Among Us
-            </h2>
-
-            <nav>
-
-                <ul class="menu-list">
-
-                    <li>
-                        <a href="#roles">
-                            Ролі
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#tasks">
-                            Завдання
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#facts">
-                            Факти
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
+        <div class="logo">
+            <h1>AMONG US</h1>
         </div>
 
-        <div class="hero-content">
+        <nav class="nav">
 
-            <h1 class="main-logo">
-                AMONG US
-            </h1>
+            <a href="#about">Про гру</a>
+            <a href="#roles">Ролі</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#video">Відео</a>
 
-            <h2 class="warning-text">
-                There is 1 Impostor among us
-            </h2>
+        </nav>
 
-            <div class="stats-list">
+    </header>
 
-                <div class="stat-item">
-                    Tasks: 100% 🛠️
-                </div>
+    <!-- ГОЛОВНА СЕКЦІЯ -->
 
-                <div class="stat-item">
-                    Oxygen: Stable 💨
-                </div>
+    <section class="hero">
 
-                <div class="stat-item">
-                    Status: Shhh! 🤫
-                </div>
+        <div class="hero-text">
 
-            </div>
+            <h2>Космічна гра про команду та зрадників</h2>
 
-            <a class="btn-emergency"
-                href="#roles">
+            <p>
+                Among Us — популярна онлайн-гра,
+                де екіпаж корабля виконує завдання,
+                а імпостер намагається всіх перемогти.
+            </p>
 
-                EMERGENCY MEETING
-
+            <a class="button" href="https://www.innersloth.com/games/among-us/"
+                target="_blank">
+                Офіційний сайт
             </a>
 
         </div>
 
-    </header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg"
+            alt="Among Us">
 
-    <!-- MAIN -->
+    </section>
 
-    <main>
+    <!-- ПРО ГРУ -->
 
-        <h2 class="section-title">
-            Choose Your Side
-        </h2>
+    <section class="about" id="about">
 
-        <!-- ROLES -->
+        <h2>Що таке Among Us?</h2>
 
-        <section id="roles"
-            class="cards-container">
+        <div class="cards">
 
-            <div class="card crewmate">
+            <div class="card">
 
-                <div class="role-icon">
-                    💙
-                </div>
-
-                <h3>
-                    Crewmate
-                </h3>
+                <h3>Командна робота</h3>
 
                 <p>
-                    Виконуй завдання,
-                    стеж за камерами
-                    та знайди зрадника.
+                    Гравці разом виконують завдання
+                    на космічному кораблі.
                 </p>
 
             </div>
 
-            <div class="card impostor">
+            <div class="card">
 
-                <div class="role-icon">
-                    ❤️
-                </div>
-
-                <h3>
-                    Impostor
-                </h3>
+                <h3>Імпостер</h3>
 
                 <p>
-                    Саботуй роботу корабля
-                    та ліквідуй команду
-                    непомітно.
+                    Один із гравців є зрадником
+                    та заважає екіпажу.
                 </p>
 
             </div>
 
-            <div class="card ghost">
+            <div class="card">
 
-                <div class="role-icon">
-                    👻
-                </div>
-
-                <h3>
-                    Ghost
-                </h3>
+                <h3>Обговорення</h3>
 
                 <p>
-                    Навіть після поразки
-                    продовжуй допомагати
-                    своїм друзям.
+                    Після кожного раунду
+                    гравці голосують.
                 </p>
 
             </div>
 
-        </section>
+        </div>
 
-        <!-- TASKS -->
+    </section>
 
-        <section id="tasks"
-            class="info-section">
+    <!-- РОЛІ -->
 
-            <h2>
-                Популярні завдання
-            </h2>
+    <section class="roles" id="roles">
 
-            <ul>
+        <h2>Ролі у грі</h2>
 
-                <li>
-                    Fix Wiring
-                </li>
+        <div class="roles-container">
 
-                <li>
-                    Swipe Card
-                </li>
+            <div class="role-box crew">
 
-                <li>
-                    Empty Garbage
-                </li>
+                <h3>Екіпаж</h3>
 
-                <li>
-                    Start Reactor
-                </li>
+                <p>
+                    Повинен виконати всі завдання
+                    та знайти імпостера.
+                </p>
 
-            </ul>
+            </div>
 
-        </section>
+            <div class="role-box impostor">
 
-        <!-- FACTS -->
+                <h3>Імпостер</h3>
 
-        <section id="facts"
-            class="info-section">
+                <p>
+                    Саботує корабель та усуває
+                    членів екіпажу.
+                </p>
 
-            <h2>
-                Цікаві факти
-            </h2>
+            </div>
 
-            <p>
-                Among Us стала популярною
-                у всьому світі
-                завдяки стрімерам
-                та блогерам.
-            </p>
+        </div>
 
-            <p>
-                Гру створила компанія
-                InnerSloth.
-            </p>
+    </section>
 
-            <p>
-                У грі можна грати
-                з друзями онлайн
-                або через локальну мережу.
-            </p>
+    <!-- ГАЛЕРЕЯ -->
 
-        </section>
+    <section class="gallery" id="gallery">
 
-    </main>
+        <h2>Галерея гри</h2>
+
+        <div class="gallery-box">
+
+            <img src="https://play-lh.googleusercontent.com/JqRnT9j6H2z1gS4xA0Jf0z9fYk8T9X5Yw6xR2P5A"
+                alt="Among Us">
+
+            <img src="https://cdn1.epicgames.com/offer/963137e4c29d4c79a81323b8fab03a40/EGS_AmongUs_Innersloth_S1_2560x1440"
+                alt="Among Us">
+
+            <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/945360/header.jpg"
+                alt="Among Us">
+
+        </div>
+
+    </section>
+
+    <!-- ВІДЕО -->
+
+    <section class="video-section" id="video">
+
+        <h2>Трейлер гри</h2>
+
+        <iframe width="700" height="400"
+            src="https://www.youtube.com/embed/nsYdkh9uZwE"
+            title="Among Us"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+    </section>
 
     <!-- FOOTER -->
 
-    <footer>
+    <footer class="footer">
 
         <p>
-            Сайт розроблено Заблоцьким Яремою • 2026
+            Сайт розроблено Ковальчуком Марком © 2026
         </p>
 
     </footer>
@@ -239,4 +184,3 @@
 </body>
 
 </html>
-```
