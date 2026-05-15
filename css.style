@@ -1,33 +1,23 @@
-/* =========================
-   М2У1 СЕЛЕКТОРИ ТА ТЕКСТ
-========================= */
-
 body {
 
     margin: 0;
 
     font-family: Arial, sans-serif;
 
-    background-color: #f4f4f4;
+    background: #f4f4f4;
 
     color: #222;
 }
 
-h1, h2, h3 {
+/* HEADER */
 
-    font-weight: bold;
-}
+header {
 
-/* =========================
-   ШАПКА САЙТУ
-========================= */
-
-.site-header {
-
-    background: linear-gradient(90deg,
+    background: linear-gradient(
+    90deg,
     #4a148c,
     #7b1fa2,
-    #9c27b0);
+    #e91e63);
 
     color: white;
 
@@ -39,69 +29,56 @@ h1, h2, h3 {
 
     flex-wrap: wrap;
 
-    padding: 20px 40px;
+    padding: 20px;
 
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* LOGO */
-
-.logo h1 {
+header h2 {
 
     margin: 0;
 
-    font-size: 42px;
+    font-size: 34px;
 }
 
-.logo p {
+/* MENU */
 
-    margin-top: 5px;
-
-    font-size: 18px;
-}
-
-/* =========================
-   НАВІГАЦІЯ
-========================= */
-
-.navbar {
+.menu-list {
 
     display: flex;
 
     gap: 15px;
 
-    flex-wrap: wrap;
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
 }
 
-.navbar a {
+.menu-list a {
 
     text-decoration: none;
 
     color: white;
 
-    font-size: 18px;
-
-    font-weight: bold;
+    background: rgba(255,255,255,0.2);
 
     padding: 12px 18px;
 
     border-radius: 10px;
 
-    background-color: rgba(255,255,255,0.15);
-
     transition: 0.3s;
 }
 
-.navbar a:hover {
+.menu-list a:hover {
 
-    background-color: white;
+    background: white;
 
     color: black;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* HERO */
 
 .hero {
 
@@ -113,12 +90,12 @@ h1, h2, h3 {
 
     flex-wrap: wrap;
 
-    padding: 70px 30px;
+    padding: 70px 20px;
 
     background: linear-gradient(
     180deg,
-    #ede7f6,
-    #d1c4e9);
+    #f3e5f5,
+    #e1bee7);
 }
 
 .hero-text {
@@ -126,37 +103,36 @@ h1, h2, h3 {
     max-width: 500px;
 }
 
-.hero-text h2 {
+.hero h1 {
 
     font-size: 54px;
 
-    color: #6a1b9a;
-
-    margin-bottom: 15px;
+    color: #7b1fa2;
 }
 
-.hero-text p {
+.hero p {
 
     font-size: 22px;
 
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
-/* =========================
-   КНОПКА
-========================= */
+/* BUTTON */
 
-.play-button {
+.play-btn {
 
     display: inline-block;
 
-    margin-top: 25px;
+    margin-top: 20px;
 
     padding: 16px 34px;
 
     border-radius: 12px;
 
-    text-decoration: none;
+    background: linear-gradient(
+    90deg,
+    #e91e63,
+    #9c27b0);
 
     color: white;
 
@@ -164,28 +140,23 @@ h1, h2, h3 {
 
     font-weight: bold;
 
-    background: linear-gradient(
-    90deg,
-    #e91e63,
-    #9c27b0);
+    text-decoration: none;
 
     box-shadow: 0 6px 0 #6a1b9a;
 
     transition: 0.3s;
 }
 
-.play-button:hover {
+.play-btn:hover {
 
     transform: translateY(-5px);
-
-    box-shadow: 0 10px 0 #6a1b9a;
 }
 
 /* HERO IMAGE */
 
-.hero-image img {
+.hero img {
 
-    width: 360px;
+    width: 350px;
 
     border-radius: 20px;
 
@@ -194,21 +165,14 @@ h1, h2, h3 {
     transition: 0.3s;
 }
 
-.hero-image img:hover {
+.hero img:hover {
 
     transform: scale(1.05);
 }
 
-/* =========================
-   СЕКЦІЇ
-========================= */
+/* TITLES */
 
-.section {
-
-    padding: 60px 20px;
-}
-
-.section h2 {
+section h2 {
 
     text-align: center;
 
@@ -216,50 +180,29 @@ h1, h2, h3 {
 
     color: #7b1fa2;
 
-    margin-bottom: 40px;
+    margin-top: 60px;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
+/* ABOUT */
 
-.about-section {
+.about-text {
 
-    background-color: white;
-}
-
-.about-box {
-
-    max-width: 850px;
+    max-width: 800px;
 
     margin: auto;
 
-    padding: 30px;
-
-    border-radius: 15px;
-
-    background: linear-gradient(
-    180deg,
-    #f3e5f5,
-    #e1bee7);
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.about-box p {
+    text-align: center;
 
     font-size: 22px;
 
     line-height: 1.8;
 
-    text-align: center;
+    padding: 20px;
 }
 
-/* =========================
-   FLEXBOX КАРТКИ
-========================= */
+/* CARDS */
 
-.cards-container {
+.cards {
 
     display: flex;
 
@@ -268,23 +211,27 @@ h1, h2, h3 {
     gap: 25px;
 
     flex-wrap: wrap;
-}
 
-/* CARD */
+    padding: 30px;
+}
 
 .card {
 
-    width: 260px;
+    width: 250px;
 
-    padding: 25px;
+    background: white;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
-    background-color: white;
+    overflow: hidden;
 
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 
     transition: 0.3s;
+
+    text-align: center;
+
+    padding: 20px;
 }
 
 .card:hover {
@@ -292,9 +239,16 @@ h1, h2, h3 {
     transform: translateY(-10px);
 }
 
-.card h3 {
+.card img {
 
-    text-align: center;
+    width: 120px;
+
+    height: 120px;
+
+    object-fit: contain;
+}
+
+.card h3 {
 
     color: #7b1fa2;
 
@@ -303,22 +257,12 @@ h1, h2, h3 {
 
 .card p {
 
-    text-align: center;
-
     font-size: 18px;
 
     line-height: 1.6;
 }
 
-/* IMPOSTOR SECTION */
-
-.impostor-section {
-
-    background: linear-gradient(
-    180deg,
-    #fce4ec,
-    #f8bbd0);
-}
+/* IMPOSTOR */
 
 .impostor-card {
 
@@ -328,19 +272,9 @@ h1, h2, h3 {
     #ffcdd2);
 }
 
-/* =========================
-   ROLES SECTION
-========================= */
+/* ROLES */
 
-.roles-section {
-
-    background: linear-gradient(
-    180deg,
-    #ede7f6,
-    #d1c4e9);
-}
-
-.roles-container {
+.roles {
 
     display: flex;
 
@@ -349,6 +283,8 @@ h1, h2, h3 {
     gap: 30px;
 
     flex-wrap: wrap;
+
+    padding: 40px;
 }
 
 .role-box {
@@ -357,9 +293,9 @@ h1, h2, h3 {
 
     padding: 30px;
 
-    border-radius: 15px;
+    border-radius: 18px;
 
-    background-color: white;
+    background: white;
 
     text-align: center;
 
@@ -380,45 +316,17 @@ h1, h2, h3 {
     font-size: 30px;
 }
 
-/* =========================
-   FOOTER / ФУНДАМЕНТ
-========================= */
+/* FOOTER */
 
-.site-footer {
+footer {
 
-    background: linear-gradient(
-    90deg,
-    #1a1a1a,
-    #000000);
+    background: #222;
 
     color: white;
 
     text-align: center;
 
-    padding: 45px 20px;
+    padding: 40px;
 
     margin-top: 40px;
-}
-
-.footer-content h2 {
-
-    color: white;
-
-    font-size: 36px;
-}
-
-.footer-content p {
-
-    font-size: 18px;
-
-    line-height: 1.7;
-}
-
-.author {
-
-    margin-top: 20px;
-
-    font-weight: bold;
-
-    color: #d1c4e9;
 }
