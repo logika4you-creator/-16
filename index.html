@@ -3,250 +3,251 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>Among Us</title>
+    <title>Among Us — космічна гра!</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- ШАПКА -->
 
     <header>
 
-        <h2>Among Us</h2>
+        <h1>
+            🚀 Among Us — знайди самозванця!
+        </h1>
 
-        <!-- NAVIGATION -->
+        <!-- НАВІГАЦІЯ -->
 
-        <nav>
+        <nav class="menu">
 
-            <ul class="menu-list">
+            <a href="#about"
+                class="nav-button">
 
-                <li>
-                    <a href="#about">
-                        Про гру
-                    </a>
-                </li>
+                Про гру
 
-                <li>
-                    <a href="#crew">
-                        Мирні
-                    </a>
-                </li>
+            </a>
 
-                <li>
-                    <a href="#impostors">
-                        Самозванці
-                    </a>
-                </li>
+            <a href="#crew"
+                class="nav-button">
 
-                <li>
-                    <a href="#roles">
-                        Ролі
-                    </a>
-                </li>
+                Мирні
 
-            </ul>
+            </a>
+
+            <a href="#impostor"
+                class="nav-button">
+
+                Самозванці
+
+            </a>
+
+            <a href="#facts"
+                class="nav-button">
+
+                Цікаві факти
+
+            </a>
+
+            <a href="#why"
+                class="nav-button">
+
+                Чому гра крута
+
+            </a>
 
         </nav>
 
     </header>
 
+    <!-- MAIN -->
+
     <main>
 
-        <!-- HERO -->
+        <!-- ПРО ГРУ -->
 
-        <section class="hero">
+        <section id="about"
+            class="section">
 
-            <div class="hero-text">
+            <h2>
+                Що таке Among Us?
+            </h2>
 
-                <h1>Знайди самозванця!</h1>
+            <h3>
 
-                <p>
-                    Among Us — популярна гра,
-                    у якій мирні виконують завдання,
-                    а самозванці намагаються
-                    всіх обманути.
-                </p>
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg"
+                    width="500"
+                    alt="Among Us">
 
-                <!-- BUTTON -->
+            </h3>
 
-                <a href="https://www.innersloth.com/games/among-us/"
-                    target="_blank"
-                    class="play-btn">
+            <p>
 
-                    Грати
-
-                </a>
-
-            </div>
-
-            <!-- HERO IMAGE -->
-
-            <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Among_Us_cover_art.jpg"
-                alt="Among Us">
-
-        </section>
-
-        <!-- ABOUT -->
-
-        <section id="about">
-
-            <h2>Про гру</h2>
-
-            <p class="about-text">
-
-                Among Us — це гра,
-                де є мирні та самозванці.
-                Мирні повинні виконати всі завдання,
-                а самозванці — знищити екіпаж.
+                Among Us — це популярна гра,
+                де є мирні гравці та самозванці.
+                Мирні повинні виконувати завдання,
+                а самозванці — обманювати всіх
+                та викидати гравців із гри 👨‍🚀
 
             </p>
 
         </section>
 
-        <!-- CREW -->
+        <!-- МИРНІ -->
 
-        <section id="crew">
+        <section id="crew"
+            class="section">
 
-            <h2>Мирні</h2>
+            <h2>
+                Мирні гравці
+            </h2>
 
-            <div class="cards">
+            <p>
 
-                <div class="card">
+                Мирні виконують завдання
+                на космічному кораблі 🚀
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png"
-                        alt="Crew">
+            </p>
 
-                    <h3>Завдання</h3>
+            <ul>
 
-                    <p>
-                        Мирні виконують
-                        місії на кораблі.
-                    </p>
+                <li>
+                    🔧 Лагодять системи
+                </li>
 
-                </div>
+                <li>
+                    📡 Роблять завдання
+                </li>
 
-                <div class="card">
+                <li>
+                    🧐 Шукають самозванця
+                </li>
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png"
-                        alt="Discussion">
+                <li>
+                    🗳 Голосують на зборах
+                </li>
 
-                    <h3>Обговорення</h3>
+            </ul>
 
-                    <p>
-                        Гравці шукають
-                        самозванця разом.
-                    </p>
+            <h3>
 
-                </div>
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/945360/ss_5c4f0a84a3f2b80b9dcd51cb07cdbcdaadbca9e8.jpg"
+                    width="100%"
+                    alt="Crewmates">
 
-                <div class="card">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
-                        alt="Victory">
-
-                    <h3>Перемога</h3>
-
-                    <p>
-                        Мирні виграють,
-                        якщо знайдуть зрадника.
-                    </p>
-
-                </div>
-
-            </div>
+            </h3>
 
         </section>
 
-        <!-- IMPOSTORS -->
+        <!-- САМОЗВАНЦІ -->
 
-        <section id="impostors">
+        <section id="impostor"
+            class="section">
 
-            <h2>Самозванці</h2>
+            <h2>
+                Самозванці
+            </h2>
 
-            <div class="cards">
+            <p>
 
-                <div class="card impostor-card">
+                Самозванці намагаються
+                зламати корабель
+                та перемогти мирних 😈
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/3522/3522093.png"
-                        alt="Sabotage">
+            </p>
 
-                    <h3>Саботаж</h3>
+            <ul>
 
-                    <p>
-                        Самозванці
-                        ламають системи.
-                    </p>
+                <li>
+                    🔥 Роблять саботаж
+                </li>
 
-                </div>
+                <li>
+                    👀 Ховаються серед мирних
+                </li>
 
-                <div class="card impostor-card">
+                <li>
+                    🚪 Пересуваються вентиляцією
+                </li>
 
-                    <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png"
-                        alt="Vent">
+                <li>
+                    ❌ Усувають екіпаж
+                </li>
 
-                    <h3>Вентиляція</h3>
+            </ul>
 
-                    <p>
-                        Вони можуть
-                        пересуватись таємно.
-                    </p>
+            <h3>
 
-                </div>
+                <img src="https://static.wikia.nocookie.net/among-us-wiki/images/5/58/The_Skeld.png"
+                    width="100%"
+                    alt="Impostor">
 
-                <div class="card impostor-card">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png"
-                        alt="Lies">
-
-                    <h3>Обман</h3>
-
-                    <p>
-                        Самозванці
-                        обманюють екіпаж.
-                    </p>
-
-                </div>
-
-            </div>
+            </h3>
 
         </section>
 
-        <!-- ROLES -->
+        <!-- ФАКТИ -->
 
-        <section id="roles">
+        <section id="facts"
+            class="section">
 
-            <h2>Ролі</h2>
+            <h2>
+                Цікаві факти
+            </h2>
 
-            <div class="roles">
+            <p>
+                🎮 Гра вийшла у 2018 році.
+            </p>
 
-                <div class="role-box">
+            <p>
+                🌍 У Among Us грають люди
+                по всьому світу.
+            </p>
 
-                    <h3>Мирний</h3>
+            <p>
+                👨‍🚀 Гравці можуть змінювати
+                колір та костюми персонажа.
+            </p>
 
-                    <p>
-                        Робить завдання
-                        та шукає зрадника.
-                    </p>
+            <p>
+                🚀 Найпопулярніша карта —
+                The Skeld.
+            </p>
 
-                </div>
+        </section>
 
-                <div class="role-box">
+        <!-- ЧОМУ ПОДОБАЄТЬСЯ -->
 
-                    <h3>Самозванець</h3>
+        <section id="why"
+            class="section">
 
-                    <p>
-                        Саботує корабель
-                        та усуває гравців.
-                    </p>
+            <h2>
+                Чому мені подобається Among Us
+            </h2>
 
-                </div>
+            <p>
 
-            </div>
+                Тому що гра дуже весела,
+                особливо коли граєш із друзями 😄
+
+            </p>
+
+            <p>
+
+                Тут потрібно думати,
+                шукати самозванця
+                та бути уважним 🧠
+
+            </p>
+
+            <h3>
+
+                <img src="https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?q=80&w=1200&auto=format&fit=crop"
+                    width="100%"
+                    alt="Among Us players">
+
+            </h3>
 
         </section>
 
@@ -256,17 +257,10 @@
 
     <footer>
 
-        <h2>Among Us</h2>
-
-        <p>
-            Навчальний сайт-лендинг
-            з HTML та CSS
-        </p>
-
         <p>
 
-            Сайт розроблено
-            Ковальчуком Марком © 2026
+            🚀 Сайт розроблено
+            Ковальчуком Марком © 2026 🚀
 
         </p>
 
