@@ -1,185 +1,97 @@
 body {
-
     font-family: Arial, sans-serif;
-
     background-color: #f4f4f4;
-
     color: #222;
-
     margin: 0;
-
     padding: 0;
 }
 
-/* HEADER */
-
 header {
-
-    background: linear-gradient(
-    90deg,
-    #000000,
-    #2b0033);
-
-    color: white;
-
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px;
-
     text-align: center;
 }
-
-/* TITLE */
 
 h1 {
-
-    font-size: 36px;
-
-    margin-bottom: 15px;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-/* MENU */
-
 .menu {
-
     margin-top: 10px;
-
     text-align: center;
-
     padding: 10px;
 }
 
-/* BUTTONS */
-
 .nav-button {
-
-    background-color: #e91e63;
-
+    background-color: #e60000;
     color: white;
-
-    padding: 12px 18px;
-
+    padding: 10px 15px;
     margin: 5px;
-
     text-decoration: none;
-
-    font-size: 18px;
-
+    font-size: 16px;
     border-radius: 10px;
-
-    border: 2px solid #e91e63;
-
+    border: 2px solid #e60000;
     display: inline-block;
-
-    transition: 0.3s;
 }
 
 .nav-button:hover {
-
     background-color: white;
-
-    color: #e91e63;
+    color: #e60000;
 }
-
-/* MAIN */
 
 main {
-
     background-color: white;
-
     max-width: 1000px;
-
     margin: 20px auto;
-
     padding: 20px;
-
-    border-radius: 12px;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
 }
-
-/* SECTION */
 
 .section {
-
     margin: 30px 0;
-
-    padding: 25px;
-
-    border: 3px solid #ddd;
-
-    border-radius: 15px;
-
-    background: linear-gradient(
-    180deg,
-    #ffffff,
-    #f7f0ff);
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
 }
-
-/* TITLES */
 
 h2 {
-
-    font-size: 30px;
-
-    color: #e91e63;
-
+    font-size: 24px;
+    color: #e60000;
     text-align: center;
 }
-
-/* TEXT */
 
 p {
-
-    font-size: 20px;
-
+    font-size: 18px;
     padding: 10px;
-
     text-align: center;
-
-    line-height: 1.6;
 }
-
-/* LIST */
 
 ul {
-
-    font-size: 20px;
-
-    padding: 10px 40px;
-
-    line-height: 2;
+    font-size: 18px;
+    padding: 10px 30px;
 }
 
-/* IMAGES */
+li {
+    margin: 10px 0;
+}
 
 img {
-
-    margin-top: 15px;
-
-    border-radius: 15px;
-
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-top: 10px;
+    border-radius: 10px;
+    max-width: 100%;
 }
-
-/* IMAGE CENTER */
 
 h3 {
-
     text-align: center;
 }
 
-/* FOOTER */
-
 footer {
-
-    background-color: black;
-
+    background-color: #000;
     color: white;
-
     text-align: center;
-
-    padding: 20px;
-
+    padding: 15px;
     margin-top: 30px;
-
-    font-size: 18px;
+    font-size: 16px;
 }
