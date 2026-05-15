@@ -1,12 +1,14 @@
 body {
 
-    margin: 0;
-
     font-family: Arial, sans-serif;
 
-    background: #f4f4f4;
+    background-color: #f4f4f4;
 
     color: #222;
+
+    margin: 0;
+
+    padding: 0;
 }
 
 /* HEADER */
@@ -15,318 +17,169 @@ header {
 
     background: linear-gradient(
     90deg,
-    #4a148c,
-    #7b1fa2,
-    #e91e63);
+    #000000,
+    #2b0033);
 
     color: white;
 
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
     padding: 20px;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-align: center;
 }
 
-header h2 {
+/* TITLE */
 
-    margin: 0;
+h1 {
 
-    font-size: 34px;
+    font-size: 36px;
+
+    margin-bottom: 15px;
 }
 
 /* MENU */
 
-.menu-list {
+.menu {
 
-    display: flex;
+    margin-top: 10px;
 
-    gap: 15px;
+    text-align: center;
 
-    list-style: none;
-
-    padding: 0;
-
-    margin: 0;
+    padding: 10px;
 }
 
-.menu-list a {
+/* BUTTONS */
 
-    text-decoration: none;
+.nav-button {
+
+    background-color: #e91e63;
 
     color: white;
-
-    background: rgba(255,255,255,0.2);
 
     padding: 12px 18px;
 
-    border-radius: 10px;
-
-    transition: 0.3s;
-}
-
-.menu-list a:hover {
-
-    background: white;
-
-    color: black;
-}
-
-/* HERO */
-
-.hero {
-
-    display: flex;
-
-    justify-content: space-around;
-
-    align-items: center;
-
-    flex-wrap: wrap;
-
-    padding: 70px 20px;
-
-    background: linear-gradient(
-    180deg,
-    #f3e5f5,
-    #e1bee7);
-}
-
-.hero-text {
-
-    max-width: 500px;
-}
-
-.hero h1 {
-
-    font-size: 54px;
-
-    color: #7b1fa2;
-}
-
-.hero p {
-
-    font-size: 22px;
-
-    line-height: 1.7;
-}
-
-/* BUTTON */
-
-.play-btn {
-
-    display: inline-block;
-
-    margin-top: 20px;
-
-    padding: 16px 34px;
-
-    border-radius: 12px;
-
-    background: linear-gradient(
-    90deg,
-    #e91e63,
-    #9c27b0);
-
-    color: white;
-
-    font-size: 20px;
-
-    font-weight: bold;
+    margin: 5px;
 
     text-decoration: none;
 
-    box-shadow: 0 6px 0 #6a1b9a;
+    font-size: 18px;
+
+    border-radius: 10px;
+
+    border: 2px solid #e91e63;
+
+    display: inline-block;
 
     transition: 0.3s;
 }
 
-.play-btn:hover {
+.nav-button:hover {
 
-    transform: translateY(-5px);
+    background-color: white;
+
+    color: #e91e63;
 }
 
-/* HERO IMAGE */
+/* MAIN */
 
-.hero img {
+main {
 
-    width: 350px;
+    background-color: white;
 
-    border-radius: 20px;
+    max-width: 1000px;
 
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    margin: 20px auto;
 
-    transition: 0.3s;
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.hero img:hover {
+/* SECTION */
 
-    transform: scale(1.05);
+.section {
+
+    margin: 30px 0;
+
+    padding: 25px;
+
+    border: 3px solid #ddd;
+
+    border-radius: 15px;
+
+    background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f7f0ff);
 }
 
 /* TITLES */
 
-section h2 {
-
-    text-align: center;
-
-    font-size: 42px;
-
-    color: #7b1fa2;
-
-    margin-top: 60px;
-}
-
-/* ABOUT */
-
-.about-text {
-
-    max-width: 800px;
-
-    margin: auto;
-
-    text-align: center;
-
-    font-size: 22px;
-
-    line-height: 1.8;
-
-    padding: 20px;
-}
-
-/* CARDS */
-
-.cards {
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    flex-wrap: wrap;
-
-    padding: 30px;
-}
-
-.card {
-
-    width: 250px;
-
-    background: white;
-
-    border-radius: 18px;
-
-    overflow: hidden;
-
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-
-    transition: 0.3s;
-
-    text-align: center;
-
-    padding: 20px;
-}
-
-.card:hover {
-
-    transform: translateY(-10px);
-}
-
-.card img {
-
-    width: 120px;
-
-    height: 120px;
-
-    object-fit: contain;
-}
-
-.card h3 {
-
-    color: #7b1fa2;
+h2 {
 
     font-size: 30px;
+
+    color: #e91e63;
+
+    text-align: center;
 }
 
-.card p {
+/* TEXT */
 
-    font-size: 18px;
+p {
+
+    font-size: 20px;
+
+    padding: 10px;
+
+    text-align: center;
 
     line-height: 1.6;
 }
 
-/* IMPOSTOR */
+/* LIST */
 
-.impostor-card {
+ul {
 
-    background: linear-gradient(
-    180deg,
-    #ffebee,
-    #ffcdd2);
+    font-size: 20px;
+
+    padding: 10px 40px;
+
+    line-height: 2;
 }
 
-/* ROLES */
+/* IMAGES */
 
-.roles {
+img {
 
-    display: flex;
+    margin-top: 15px;
 
-    justify-content: center;
+    border-radius: 15px;
 
-    gap: 30px;
-
-    flex-wrap: wrap;
-
-    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.role-box {
+/* IMAGE CENTER */
 
-    width: 280px;
-
-    padding: 30px;
-
-    border-radius: 18px;
-
-    background: white;
+h3 {
 
     text-align: center;
-
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-
-    transition: 0.3s;
-}
-
-.role-box:hover {
-
-    transform: scale(1.05);
-}
-
-.role-box h3 {
-
-    color: #e91e63;
-
-    font-size: 30px;
 }
 
 /* FOOTER */
 
 footer {
 
-    background: #222;
+    background-color: black;
 
     color: white;
 
     text-align: center;
 
-    padding: 40px;
+    padding: 20px;
 
-    margin-top: 40px;
+    margin-top: 30px;
+
+    font-size: 18px;
 }
